@@ -32,7 +32,8 @@ def cli(url: str, no_convert: bool, out_dir: str) -> None:
     """Baixa vídeos públicos de uma URL de pesquisa/playlist."""
     scraper = VideoScraper()
     html = scraper.fetch_html(url)
-    video_urls = scraper.extract_video_urls(html)
+    # video_urls = scraper.extract_video_urls(html)
+    video_urls = scraper.extract_all_video_urls(url)
 
     if not video_urls:
         click.echo("Nenhum vídeo encontrado!")
