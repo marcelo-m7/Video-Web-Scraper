@@ -3,10 +3,10 @@ from pathlib import Path
 
 import click
 
-from .scraper import VideoScraper
-from .selector import VideoSelector
-from .downloader import VideoDownloader
-from .config import DOWNLOAD_DIR
+from scraper import VideoScraper
+from selector import VideoSelector
+from downloader import VideoDownloader
+from config import DOWNLOAD_DIR
 
 
 logging.basicConfig(

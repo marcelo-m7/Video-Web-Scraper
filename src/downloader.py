@@ -6,7 +6,7 @@ from typing import Iterable
 import requests
 from tqdm import tqdm
 
-from .config import CHUNK_SIZE, DOWNLOAD_DIR, HEADERS
+from config import CHUNK_SIZE, DOWNLOAD_DIR, HEADERS
 
 logger = logging.getLogger(__name__)
 
